@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    stages{
+        stage{
+            steps{
+                sh 'php --version'
+            }
+            
+        }
+        stage{
+            steps{
+                sh 'php index.php'
+            }
+            
+        }
+    }
+}
